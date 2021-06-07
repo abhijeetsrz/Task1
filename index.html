@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK1</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bungee+Shade&family=Gugi&family=Lato:wght@700;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:wght@900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            background-image: url('image5.png');
+            background-repeat: no-repeat;
+            /* background-position: top; */
+            background-size: 100%  600px;
+            background-attachment:scroll;
+            
+            
+
+        }
+        .Alcher{
+            padding-left: 40px ;
+            padding-top: 30px;
+            color:aliceblue;
+            font-family:'Gugi', cursive; 
+            
+        }
+        .stream{
+            padding-left: 1px;
+            padding-top: 44px;
+            color: rgb(253, 184, 54);
+            
+            font-family:'Gugi', cursive; 
+
+        }
+        .alcherstream{
+            display: flex;
+            margin: auto;
+        }
+        .top{
+            padding: 100px 400px 500px 400px;
+            font-size: 2.5em;
+            text-align: center;
+            font-family:   'Bungee Shade', cursive;
+            color:#d2fdc3;  
+        }
+        .usercircle{
+            font-size: 40px;
+            padding-left: 270px;
+            padding-top: 30px;
+            color: #292929;
+            transition: all .25s;
+        }
+        .usercircle:hover{
+            color: black;
+        }
+
+
+
+        .button{
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+            background-color:rgb(8, 247, 203,0.93);
+            font-family: 'Lato', sans-serif;
+            border: 0;
+            box-shadow: 3px 3px rgb(153, 155, 156);
+            border-radius: 5px;
+            transition: all .25s;
+        }
+        .button:hover{
+            color: rgb(60, 12, 104);
+        }
+        
+        .search{
+            margin-left: 70px;
+            padding-right: 5px;
+            padding-top: 50px;
+            border-bottom: 4px solid white;
+        }
+        .search i{
+            font-size: 25px;
+            float: right;
+            color: rgb(201, 201, 201);
+            padding-left: 400px;
+            padding-top: 0px;
+            cursor: pointer;
+        }
+        .search input{
+            border: none;
+            outline: none;
+            background: none;
+            color: white;
+            font-size: 18px;
+            
+            padding-right: 200px;
+            
+
+        }
+
+
+        .inner-footer{
+            margin-top: 100px;
+            padding: 0;
+            background-color: #272727;
+        }
+        .social-links{
+            width: 100%;
+            height: 100px;
+        }
+        .social-links ul{
+            display: flex;
+            width: 80px;
+            height: 30px;
+            margin: auto;
+        }
+        .social-items{
+            list-style: none;
+            padding-top: 10px;
+            padding-left:20px ;
+            
+        }
+        .social-items a{
+            font-size: 40px;
+            color: aquamarine;
+            transition: all .25s;
+
+
+        }
+        .social-items a:hover{
+            color:rgb(16, 151, 106) ;
+        }
+        .quick-items a:hover{
+            color:rgb(16, 151, 106) ;
+        }
+        .quick-links{
+            width: 100%;
+            height: 100px;
+        }
+        .quick-links ul{
+            display: flex;
+            list-style: none; 
+             
+        }
+        .quick-items{
+            padding-top: 10px;
+            padding-left: 20px;
+            margin: auto; 
+        }
+        .quick-items a{
+            text-decoration: none;
+            font-family:'Anton', sans-serif; 
+            color: aquamarine;
+            font-size: 25px;
+            transition: all .25s;
+
+        }
+        .outer-footer{
+            background-color: #3f3f3f;
+            font-family: 'Anton', sans-serif;
+            font-size: 20px;
+            color: white;
+            padding-left:590px;
+            
+            margin: auto;
+        }
+        .h1{
+           margin-top: -340px;
+           padding-left: 80px;
+           font-size: 1.5em;
+           font-family: 'Lato', sans-serif;
+           letter-spacing: 2px;
+           text-shadow: 2px 0 rgb(0, 0, 0);
+           font-weight: bolder;
+        }
+        .f1{
+            display: flex;
+            margin: auto;
+        }
+       
+        .m1{
+            
+            padding-left: 80px;
+            padding-top: 20px;
+            margin: auto;
+            text-align: center;
+            font-family:  'Lato', sans-serif;
+           
+        }
+        .m1 a{
+            text-decoration: none;
+            color: black;
+            transition: all .25s; 
+        }
+        .m2{
+            
+            padding-left: 20px;
+            padding-top: 20px;
+            margin: auto;
+            text-align: center;
+            font-family:  'Lato', sans-serif;
+            
+        }
+        .m2 a{
+            text-decoration: none;
+            color: black;
+            transition: all .25s; 
+        }
+        .m3{
+            
+            padding-left: 20px;
+            padding-top: 20px;
+            margin: auto;
+            text-align: center;
+            font-family:  'Lato', sans-serif;
+            
+        }
+        .m3 a{
+            text-decoration: none;
+            color: black;
+            transition: all .25s; 
+        }
+        .m4{
+            
+            padding-left: 20px;
+            padding-top: 20px;
+            margin: auto;
+            text-align: center;
+            font-family:  'Lato', sans-serif;
+             
+        }
+        .m4 a{
+            text-decoration: none;
+            color: black;
+            transition: all .25s; 
+        }
+        .m1 a:hover{
+            color: rgb(241, 31, 213);
+        }
+        .m2 a:hover{
+            color: rgb(241, 31, 213);
+        }
+        .m3 a:hover{
+            color: rgb(241, 31, 213);
+        }
+        .m4 a:hover{
+            color: rgb(241, 31, 213);
+        }
+        .n1{
+            width: 345px;
+            height: 300px;
+            border-radius: 7px;
+        }
+        .n2{
+            width: 345px;
+            height: 300px;
+            border-radius: 7px;
+        }
+        .n3{
+            width: 345px;
+            height: 300px;
+            border-radius: 7px;
+        }
+        .n4{
+            width: 345px;
+            height: 300px;
+            border-radius: 7px;
+        }
+
+
+        .h2{
+           margin-top: 70px;
+           padding-left: 80px;
+           font-size: 1.5em;
+           font-family: 'Lato', sans-serif;
+           letter-spacing: 2px;
+           text-shadow: 2px 0 rgb(0, 0, 0);
+           font-weight: bolder;
+        }
+        .f2{
+            display: flex;
+            margin: auto;
+        }
+       
+        .p1{
+            
+            padding-left: 80px;
+            padding-top: 20px;
+            margin: auto;
+            text-align: center;
+            font-family:  'Lato', sans-serif;   
+        }
+        .p1 a{
+            text-decoration: none;
+            color: black;
+            transition: all .25s; 
+        }
+        .p2{
+            
+            padding-left: 20px;
+            padding-top: 20px;
+            margin: auto;
+            text-align: center;
+            font-family:  'Lato', sans-serif;
+           
+        }
+        .p2 a{
+            text-decoration: none;
+            color: black;
+            transition: all .25s; 
+        }
+        .p3{
+            
+            padding-left: 20px;
+            padding-top: 20px;
+            margin: auto;
+            text-align: center;
+            font-family:  'Lato', sans-serif;
+            
+        }
+        .p3 a{
+            text-decoration: none;
+            color: black;
+            transition: all .25s; 
+        }
+        .p4{
+            
+            padding-left: 20px;
+            padding-top: 20px;
+            margin: auto;
+            text-align: center;
+            font-family:  'Lato', sans-serif;  
+        }
+        .p4 a{
+            text-decoration: none;
+            color: black;
+            transition: all .25s; 
+        }
+
+        .p1 a:hover{
+            color: rgb(241, 31, 213);
+        }
+        .p2 a:hover{
+            color: rgb(241, 31, 213);
+        }
+        .p3 a:hover{
+            color: rgb(241, 31, 213);
+        }
+        .p4 a:hover{
+            color: rgb(241, 31, 213);
+        }
+        .q1{
+            width: 345px;
+            height: 300px;
+            border-radius: 7px;
+        }
+        .q2{
+            width: 345px;
+            height: 300px;
+            border-radius: 7px;
+        }
+        .q3{
+            width: 345px;
+            height: 300px;
+            border-radius: 7px;
+        }
+        .q4{
+            width: 345px;
+            height: 300px;
+            border-radius: 7px;
+        }
+        
+       
+
+    </style>
+</head>
+
+<header>
+    <div class="alcherstream">
+       <div class="Alcher">
+       <h1>ALCHER</h1>
+       </div>
+       <div class="stream"><h3>STREAM</h3></div>
+       <div class="search">
+        <i class="far fa-search"></i>
+        <input type="text" placeholder="Search For Movies.." spellcheck="false">
+       </div>
+       <div class="usercircle"><i class="fas fa-user-circle"></i></div>
+       
+    </div>
+   
+    <div class="top">
+        
+       <p> STREAM ALL THE POPULAR MOVIES ON THE GO </p>
+       <p>
+           <button class="button">GET STARTED</button>
+       </p>
+       
+        
+
+    </div>
+</header>
+
+<body>
+    <div class="h1">BLOCKBUSTER HITS</div>
+    <div class="f1">
+        <div class="m1">
+            <img class="n1" src="images (1).jpg" alt="movie1"><a href="#">BLOOD SONG</a>
+        </div>
+        <div class="m2">
+            <img class="n2" src="images (2).jpg" alt="movie1" ><a href="#">MASTER</a>
+        </div>
+        <div class="m3">
+            <img class="n3" src="images (3).jpg" alt="movie1"><a href="#">TIGER ZINDA HAI</a>
+            </div>
+        <div class="m4">
+            <img class="n4" src="images (4).jpg" alt="movie1"><a href="#">KICK</a>
+        </div>
+    </div>
+
+
+    <div class="h2">BLOCKBUSTER HITS</div>
+    <div class="f2">
+        <div class="p1">
+            <img class="q1" src="images (5).jpg" alt="movie1"><a href="#">LORD OF WAR</a>
+        </div>
+        <div class="p2">
+            <img class="q2" src="images (6).jpg" alt="movie1" ><a href="#">FALLOUT</a>
+        </div>
+        <div class="p3">
+            <img class="q3" src="images (7).jpg" alt="movie1"><a href="#">WAR</a>
+        </div>
+        <div class="p4">
+            <img class="q4" src="images (8).jpg" alt="movie1"><a href="#">PUSHPA</a>
+        </div>
+    </div>
+
+    
+    <footer class="footer">
+        <div class="inner-footer">
+
+
+            <div class="social-links">
+                <ul>
+                    <li class="social-items"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    <li class="social-items"><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                    <li class="social-items"><a href="#"><i class="fab fa-youtube-square"></i></a></li>
+                </ul>
+            </div>
+           
+
+            <div class="quick-links">
+                <ul>
+                    <li class="quick-items"><a href="#">About Us</a></li>
+                    <li class="quick-items"><a href="#">Services</a></li>
+                    <li class="quick-items"><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="outer-footer">
+            Copyright &copy; Alcher Stream.All Rights Reserved
+        </div>
+    </footer>
+    
+</body>
+</html>
